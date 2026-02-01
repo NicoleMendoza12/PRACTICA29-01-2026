@@ -1,8 +1,7 @@
 import axios from 'axios';
-
-
+const apiUrl = import.meta.env.VITE_APIMANT_URL;
 const axiosInstance = axios.create({
-    baseURL: 'https://697bbadb889a1aecfeb0abd9.mockapi.io',
+    baseURL: apiUrl,
     timeout: 10000,
     headers: {
         'Content-Type': 'application/json',
